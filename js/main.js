@@ -118,6 +118,22 @@ document.addEventListener('DOMContentLoaded', function() {
             // Here you would typically send this data to a server
             // For this example, we'll just log it to console and show an alert
             console.log({ name, email, subject, message });
+
+            // Post the form submission to https://formspree.io/f/mpwdqgjq
+            fetch('https://formspree.io/f/mpwdqgjq', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, subject, message })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            }
+            )
             
             alert('Thank you for your message! I will get back to you soon.');
             contactForm.reset();

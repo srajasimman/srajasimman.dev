@@ -1,0 +1,363 @@
+{
+    "basics": {
+      "name": "Rajasimman S",
+      "label": "Cloud and DevOps Solutions Specialist",
+      "image": "https://raw.githubusercontent.com/srajasimman/srajasimman/master/src/img/pp.jpg",
+      "email": "srajasimman@gmail.com",
+      "phone": "+91 8682832883",
+      "summary": "I am an enthusiastic, IT specialist in system administration, integration, and automation. With over 14 years of experience, I have built and operated IT infrastructure and systems on-premises and in the cloud, using classic SysOps tools and more recent DevOps technologies. While initially building and maintaining services on hardware machines for internal and external customers, I later worked on migrating similar services into new environments with modern toolchains. In the past years, I've spent more time migrating services into Kubernetes, deployed and orchestrated locally and in the cloud. I have also supported development teams in migrating their services into cloud infrastructure. I enjoy closely following the latest changes in technology and apply this to my duties wherever relevant.",
+      "location": {
+        "address": "B/4 S.P.Garden, T.Nagar",
+        "postalCode": "600017",
+        "city": "Chennai",
+        "countryCode": "IN",
+        "region": "Tamilnadu"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "rajasimman-sha",
+          "url": "https://linkedin.com/in/rajasimman-sha"
+        },
+        {
+          "network": "Github",
+          "username": "srajasimman",
+          "url": "https://github.com/srajasimman"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "FloSports Inc.",
+        "location": "Austin, Texas",
+        "position": "Lead SRE and Cloud DevOps",
+        "url": "https://www.flosports.tv",
+        "startDate": "2024-10-01",
+        "endDate": "Present",
+        "summary": "Sports Media and Broadcasting Company",
+        "highlights": [
+          "Cloud Infrastructure: Design, deploy, and manage AWS, GCP, and Azure environments using Terraform and IaC.",
+          "SRE & Reliability: Implement SRE best practices to improve system uptime, scalability, and resilience.",
+          "Observability & Monitoring: Set up Prometheus, Grafana, and Datadog for logging, monitoring, and alerting.",
+          "Containers & Orchestration: Deploy and manage Docker & Kubernetes workloads, optimizing with Helm charts.",
+          "CI/CD Pipelines: Automate deployments with GitHub Actions, Jenkins, and Cloud Build, ensuring efficient rollouts.",
+          "Performance Optimization: Conduct load testing with K6 and analyze results to improve system efficiency.",
+          "Security & Compliance: Implement IAM, secrets management, and CDN security (Fastly, AWS CloudFront) for protection.",
+          "Networking & CDN: Configure firewall rules, caching, and shielding to enhance security and performance.",
+          "Software Development: Automate workflows and build tools using Go, TypeScript, Python, and Bash.",
+          "Infrastructure as Code (IaC): Develop reusable Terraform modules for scalable and consistent infrastructure.",
+          "Cloud Cost Optimization: Monitor and reduce cloud spending through resource tuning and automation.",
+          "Incident Response: Lead on-call rotations, RCA, and self-healing automation to minimize downtime.",
+          "Deployment Strategies: Implement blue-green deployments, canary releases, and rollbacks for safe releases.",
+          "Collaboration & Documentation: Work closely with developers, write clear runbooks, playbooks, and wikis.",
+          "Automation & Innovation: Continuously improve processes by adopting new DevOps and SRE technologies."
+        ]
+      },
+      {
+        "name": "Opt IT Technologies (I) Pvt. Ltd",
+        "location": "Bangalore",
+        "position": "Team Lead - SRE, DevOps and Cloud Services",
+        "url": "https://optit.in",
+        "startDate": "2021-08-16",
+        "endDate": "2024-09-30",
+        "summary": "IT Infrastructure Management Services & DevOps Services company.",
+        "highlights": [
+          "Leading SRE & Cloud Support team: Responsible for managing and leading the SRE & Cloud Support team, including hiring and training team members, setting team goals and objectives, and monitoring team performance.",
+          "Ensuring reliability and availability: Responsible for ensuring that the company's IT infrastructure and cloud services are reliable and available to users. This includes monitoring system health, responding to incidents, and implementing changes to improve system reliability and availability.",
+          "Managing incidents: Responsible for managing incidents, coordinating with other teams to resolve issues, and ensuring that incidents are properly documented and communicated to stakeholders.",
+          "Designing and implementing solutions: Responsible for designing and implementing solutions to improve the performance, scalability, and reliability of the company's IT infrastructure and cloud services.",
+          "Cloud infrastructure management: Responsible for managing the cloud infrastructure, including setting up and configuring the infrastructure, monitoring its health, and optimizing its performance.",
+          "Collaborating with other teams: Collaborating with other teams, including development, operations, and security teams, to ensure that the company's IT infrastructure and cloud services are reliable, available, and secure.",
+          "Providing technical guidance: Providing technical guidance and mentorship to team members, ensuring that they have the necessary skills and knowledge to perform their jobs effectively.",
+          "Managing budgets and resources: Responsible for managing budgets and resources related to the SRE & Cloud Support team and ensuring that they are allocated appropriately.",
+          "Onboarding new team members: Responsible for ensuring that new team members are properly onboarded and trained on the company's IT infrastructure and cloud services, as well as the team's processes and procedures."
+        ]
+      },
+      {
+        "name": "Comodo Security Solutions Pvt Ltd.",
+        "location": "Chennai",
+        "position": "Lead System Administrator - IT Operations and Cloud",
+        "url": "https://comodo.com",
+        "startDate": "2017-07-01",
+        "endDate": "2021-08-13",
+        "summary": "Information Technology & Services",
+        "highlights": [
+          "Administration of Cloud Services and Data Center Infrastructures",
+          "Create, configure, monitor, and management of IT Infrastructures",
+          "Selfhosting websites/web apps and various services based on requirements",
+          "IT Automation and Configuration Management using various tools",
+          "Application Deployment, Configure, Backup/Restore and Upgrade",
+          "Apache, Nginx, and Tomcat web server installations and Configuration",
+          "MySQL, PostgreSQL and MongoDB Administration",
+          "Design/Development of Backup Management Systems",
+          "Development of Continuous Deployment and Integration Systems",
+          "Infrastructure, Server and Application Migration to Cloud",
+          "Creating Reusable Tools and Modules",
+          "Conducting technical interviews for the team and training them",
+          "Knowledgebase and Documentation Creation for Team"
+        ]
+      },
+      {
+        "name": "Corent Technology Pvt Ltd.",
+        "location": "Chennai",
+        "position": "Senior System Administrator",
+        "url": "https://www.corenttech.com",
+        "startDate": "2016-10-01",
+        "endDate": "2017-07-01",
+        "summary": "Software Development for Cloud Migration, PaaS & Other Cloud Services",
+        "highlights": [
+          "Administration of Cloud Infrastructures in Amazon Web Services and Microsoft Azure Cloud",
+          "Administration of In house Data Centre Infrastructures and Private Cloud",
+          "Create, configure, monitor and management of Private Cloud Infrastructures",
+          "Application Deployment, Configure, Backup/Restore and Upgrade",
+          "Design and Development of Backup and Deployment Scripts",
+          "Infrastructure Migration on Cloud Environment",
+          "Develop Configuration Management Solutions",
+          "Create tools to help teams make the most out of the available infrastructure",
+          "Apache, Nginx and Tomcat webserver installations and Configuration",
+          "MySQL, PostgreSQL and MongoDB Administration",
+          "Cloud knowledgebase Update for Team"
+        ]
+      },
+      {
+        "name": "Brandidea Consultance (P) Ltd",
+        "location": "Chennai",
+        "position": "Senior IT Executive",
+        "url": "https://www.brandidea.ai",
+        "startDate": "2014-10-01",
+        "endDate": "2016-10-01",
+        "summary": "Software Development for Sales & Marketing Analytics.",
+        "highlights": [
+          "Management of Cloud Infrastructures in AWS and Google Cloud.",
+          "Create, configure, monitor and management of Cloud Infrastructures.",
+          "Upload and update database and other data to cloud server.",
+          "Help tune performance and ensure high availability of infrastructure.",
+          "Responsible for supporting: Windows XP/Vista/Windows 7/10, Linux Desktop, Office Suite, Office 365, Windows/ Linux Server, Active Directory management, MS Exchange 2003/2007, Lotus Domino Server, iPhone/Android/Windows Mobile, Backup products, Anti-Virus products, Bio Metric Devices, CCTV Systems, DNS/DHCP, TCP/IP, Ethernet, wireless router and Firewall Configurations.",
+          "Diagnosis of desktop, application, networking and infrastructure issues.",
+          "Administering the IT department's policies and procedures.",
+          "Maintaining a log of all problems detected and system backups.",
+          "Responsible for maintaining backups and crash recovery.",
+          "Working closely with software suppliers to resolve operational issues."
+        ]
+      },
+      {
+        "name": "Hella India Automotive Pvt., Ltd.",
+        "location": "Chennai",
+        "position": "IT Support Engineer - Infrastructure Management",
+        "url": "https://www.hella.com/hella-in/",
+        "startDate": "2012-09-01",
+        "endDate": "2014-10-01",
+        "summary": "Automotive Lighting Design and Development",
+        "highlights": [
+          "Management of Windows Clients and Network Infrastructure",
+          "First and Second level support for network related issues",
+          "Installation of operating system and application on new systems",
+          "Update operating system and application patch on client systems",
+          "Installation of CAD applications (CATIA and Autodesk Moldflow)",
+          "Deploy Software package via CA IT Client Management",
+          "Configure, Monitor and management of network data storages",
+          "Configure the Lotus Notes email client for users",
+          "Support users via remote assistance tools",
+          "IT Asset management and IT Peripherals management"
+        ]
+      },
+      {
+        "name": "CMS Infosystems Private Limited",
+        "location": "Chennai",
+        "position": "IT Support Engineer",
+        "url": "https://www.cms.com",
+        "startDate": "2010-12-01",
+        "endDate": "2012-09-01",
+        "summary": "IT Infrastructure Support and Services",
+        "highlights": [
+          "Troubleshooting and configuring Windows XP and Windows 7 Clients for LAN Configuration of DNS, DHCP, Creating user account and providing policies like user account quota, authentication",
+          "Performed Remote Administration and remote Assistance for the users",
+          "Software Application Deployment to Client Systems",
+          "Taking backup periodically and restoration. Allocating the disk quota for the user",
+          "Monitoring Performance alerts triggered by the server & Resolving Hardware & Software related calls",
+          "Troubleshooting & installations of applications.",
+          "Managing storage server and folder create/access control",
+          "Provide Remote support using windows remote assistance tools.",
+          "Troubleshooting breakdown in hardware calls and operating systems calls",
+          "Installation, configure and troubleshoot operating systems. (NT/2000/XP and Windows 7)",
+          "Installation of printers, scanners and peripherals & resolving the hardware issues",
+          "Email Configuration MS Outlook, Data card and VPN",
+          "Asset Management, Movement Tracking and Maintenance of the Database"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Madras",
+        "url": "https://www.unom.ac.in/",
+        "area": "Computer Technology",
+        "studyType": "Bachelor of Computer Applications",
+        "startDate": "2005-06-01",
+        "endDate": "2008-05-01",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "C.D.Nayagam Higher Secondary School",
+        "area": "Commerce and Economics",
+        "studyType": "Higher Secondary School",
+        "startDate": "2002-06-01",
+        "endDate": "2004-04-01",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "skills": [
+      {
+        "name": "Cloud Computing",
+        "level": "Expert",
+        "keywords": ["AWS Cloud", "Azure Cloud", "Google Cloud", "Oracle Cloud"]
+      },
+      {
+        "name": "SysOps and SRE",
+        "level": "Expert",
+        "keywords": [
+          "Linux",
+          "Debian",
+          "Ubuntu",
+          "RHEL",
+          "Shell Scripting",
+          "Grafana",
+          "Prometheus",
+          "Nagios",
+          "Datadog",
+          "Networking",
+          "SSL",
+          "CDN",
+          "Jira",
+          "Confluence"
+        ]
+      },
+      {
+        "name": "DevOps",
+        "level": "Expert",
+        "keywords": [
+          "Docker",
+          "Kubernetes",
+          "Helm Charts",
+          "Jenkins",
+          "Github",
+          "Gitlab",
+          "Github Action",
+          "ArgoCD",
+          "Ansible",
+          "Terraform",
+          "Nginx",
+          "Apache",
+          "Tomcat",
+          "MySQL",
+          "Postgresql",
+          "Cassandra",
+          "Elasticsearch",
+          "Redis"
+        ]
+      },
+      {
+        "name": "Scripting",
+        "level": "Expert",
+        "keywords": ["Shell Scripting", "Python", "JavaScript", "Golang"]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Proficient"
+      },
+      {
+        "language": "Tamil",
+        "fluency": "Native speaker"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Learning and Expiriment",
+        "keywords": [
+          "Artificial Intelligence",
+          "IoT",
+          "Electronics",
+          "Cyber Security"
+        ]
+      },
+      {
+        "name": "Travel and Exploring",
+        "keywords": ["Forest Camping", "Trecking", "Mountain Climbing"]
+      }
+    ],
+    "references": [
+      {
+        "name": "Ștefan Amarandei | IT Manager at Ness Digital Engineering Romania",
+        "reference": "Raja was part of my team while I was leading the IT operations team of Nurd/Comodo.\nRaja was awalys there, reliable and willing to help, as we were going through some very deep and time-critical infrastructure redesign and remodeling, I could count on him at any given time.\nI will not need any second thought if given the opportunity to work with Raja again."
+      },
+      {
+        "name": "Mathew Jose Pallan | Technology Architect at Tarento Technologies India",
+        "reference": "I highly recommend Raja, with whom I had the pleasure of working at Tarento. \nRaja possesses a strong understanding of cloud and DevOps technologies. \nHe played a pivotal role in managing the Karmayogi Bharat initiative, a capacity-building program for Indian government officials. \nHis expertise was instrumental in migrating the entire application from the NIC data center to Google Cloud, ensuring a smooth and successful transition."
+      },
+      {
+        "name": "Baskar V | Web Development Manager at Comodo India",
+        "reference": "I have worked with many professionals throughout my journey, but Raja is a unique one to work. \nHis work ethic is pristine, and he is easily adjustable to a given situation. \nHis ability to go out of his way to help others has made him stand out. \nThanks a lot, man!"
+      }
+    ],
+    "projects": [
+      {
+        "name": "iGOT Karmayogi Bharat | NIC Govt of India",
+        "startDate": "2023-06-01",
+        "description": "As a key player in the IGOT Karmayogi project, I managed both SRE and DevOps functions, ensuring seamless operations and scalability. Utilizing Terraform and Ansible, I automated infrastructure provisioning and configuration, optimizing resource utilization. Implementation of robust monitoring solutions, including Prometheus and Grafana, bolstered platform availability and performance. Leveraging Kubernetes orchestration, I enhanced containerized deployments for increased scalability and resilience. Furthermore, I orchestrated CI/CD pipelines with Jenkins, enabling swift and reliable software delivery. Overseeing IT operations, I implemented stringent network security measures, safeguarding data integrity. My contributions played a pivotal role in maintaining the stability, scalability, and security of the IGOT Karmayogi platform, fostering effective online learning and collaboration.",
+        "highlights": [
+          "Successfully managed SRE and DevOps functions, ensuring seamless operations and scalability of the IGOT Karmayogi platform.",
+          "Utilized Terraform and Ansible to automate infrastructure provisioning and configuration, optimizing resource utilization and efficiency.",
+          "Implemented robust monitoring solutions with Prometheus and Grafana, enhancing platform availability and performance.",
+          "Enhanced containerized deployments using Kubernetes, improving scalability and resilience of the platform.",
+          "Orchestrated CI/CD pipelines with Jenkins, enabling swift and reliable software delivery.",
+          "Oversaw IT operations, implementing stringent network security measures to safeguard data integrity.",
+          "Ensured the stability and scalability of the platform, contributing to effective online learning and collaboration.",
+          "Implemented advanced network security protocols, protecting sensitive data and maintaining compliance with industry standards.",
+          "Optimized resource utilization through automation, reducing costs and improving operational efficiency.",
+          "Played a pivotal role in maintaining the platform’s stability, scalability, and security, fostering a robust environment for online learning and collaboration."
+        ],
+        "url": "https://igotkarmayogi.gov.in/"
+      },
+      {
+        "name": "DIKSHA | NCERT Govt. of India",
+        "startDate": "2021-08-16",
+        "endDate": "2023-05-31",
+        "description": "As Team Leader in the DIKSHA project, I managed the SRE and DevOps teams for project Diksha, a large-scale education platform. Leveraging Terraform and Ansible, I automated infrastructure provisioning and configuration, ensuring efficiency. I implemented robust monitoring with Prometheus and Grafana, enhancing availability. Kubernetes orchestration optimized container deployments for scalability and resilience. CI/CD pipelines with Jenkins facilitated rapid software delivery. Additionally, I oversaw IT operations, configuring network security measures for data integrity. My efforts ensured the platform's stability, scalability, and security, contributing to its success in delivering quality education.",
+        "highlights": [
+          "Successfully led the SRE and DevOps teams, driving project success through effective management and collaboration.",
+          "Leveraged Terraform and Ansible to automate infrastructure provisioning and configuration, significantly improving efficiency and reducing manual efforts.",
+          "Implemented robust monitoring solutions using Prometheus and Grafana, ensuring high availability and quick incident response.",
+          "Optimized container deployments with Kubernetes, enhancing scalability and resilience of the platform.",
+          "Established CI/CD pipelines with Jenkins, facilitating rapid and reliable software delivery.",
+          "Oversaw IT operations, configuring and maintaining network security measures to ensure data integrity and protection.",
+          "Ensured the platform's stability and scalability, contributing to its success in delivering quality education at scale.",
+          "Implemented network security protocols, safeguarding sensitive educational data and maintaining compliance with industry standards.",
+          "Coordinated effectively with cross-functional teams to ensure seamless integration and operation of all components of the platform.",
+          "Played a pivotal role in the platform’s overall success, supporting its mission to provide quality education to a large user base."
+        ],
+        "url": "https://igotkarmayogi.gov.in/"
+      },
+      {
+        "name": "Comodo Websites and Blogs Cloud Migration | Comodo Security Solutions Pvt. Ltd.",
+        "startDate": "2020-06-01",
+        "endDate": "2021-01-31",
+        "description": "During my tenure at Comodo Security Solutions Pvt. Ltd., I successfully led the migration of Comodo's websites and blogs to the cloud. This project aimed to enhance the performance, scalability, and reliability of the online presence of Comodo. By leveraging cloud technologies, we ensured a seamless transition with minimal downtime, improved security, and a robust infrastructure to handle future growth and traffic spikes.",
+        "highlights": [
+          "Orchestrated a smooth migration process, minimizing downtime and ensuring continuous availability of websites and blogs.",
+          "Improved load times and overall performance of the websites through optimized cloud infrastructure.",
+          "Implemented scalable solutions to accommodate future traffic growth and increased user engagement without compromising performance.",
+          "Strengthened security measures by integrating advanced cloud security protocols, ensuring data protection and compliance with industry standards.",
+          "Achieved cost savings by optimizing resource allocation and utilizing cloud-native tools for efficient management.",
+          "Established a robust disaster recovery plan, ensuring business continuity and quick recovery in case of any unforeseen events.",
+          "Coordinated with cross-functional teams, including developers, designers, and IT support, to ensure a cohesive and successful migration process.",
+          "Developed comprehensive documentation and guidelines to facilitate future maintenance and updates.",
+          "Implemented monitoring tools and conducted regular performance audits to continuously optimize the cloud infrastructure.",
+          "Enhanced the user experience by reducing downtime, improving website speed, and ensuring a reliable online presence."
+        ],
+        "url": "https://comodo.com"
+      }
+    ]
+  }

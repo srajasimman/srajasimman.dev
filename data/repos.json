@@ -1,0 +1,38 @@
+[
+  {
+    "name": "self-host",
+    "description": "A collection of Docker Compose configurations for self-hosting various services and applications.",
+    "url": "https://github.com/srajasimman/self-host",
+    "tags": ["docker", "docker-compose", "self-hosting", "infrastructure"]
+  },
+  {
+    "name": "openresty-prometheus",
+    "description": "OpenResty with integrated Prometheus metrics for advanced monitoring and observability.",
+    "url": "https://github.com/srajasimman/openresty-prometheus",
+    "tags": ["openresty","prometheus","monitoring","metrics","observability"]
+  },
+  {
+    "name": "terraform-aws-github-oidc-iam",
+    "description": "Terraform module for setting up GitHub OIDC with AWS IAM for secure, token-less authentication.",
+    "url": "https://github.com/srajasimman/terraform-aws-github-oidc-iam",
+    "tags": ["terraform", "aws", "github", "oidc", "iam", "security"]
+  },
+  {
+    "name": "mern-assessment-app",
+    "description": "A full-stack web application built using the MERN stack that enables administrators to create assessments with multiple-choice questions, and users to take these assessments via unique links and view their results upon completion.",
+    "url": "https://github.com/srajasimman/mern-assessment-app",
+    "tags": ["fullstack", "mern", "assessment", "web-app", "react"]
+  },
+  {
+    "name": "time-to-review",
+    "description": "A tool to analyze and improve PR review times and development workflow efficiency.",
+    "url": "https://github.com/srajasimman/time-to-review",
+    "tags": ["github", "analytics", "workflow", "pr-review", "development"]
+  },
+  {
+    "name": "conventional-commit-validator",
+    "description": "A validator to ensure commits follow the conventional commit format for better versioning and changelog generation.",
+    "url": "https://github.com/srajasimman/conventional-commit-validator",
+    "tags": ["git", "conventional-commits", "validation", "ci", "quality"]
+  }
+]

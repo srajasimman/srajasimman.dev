@@ -43,7 +43,7 @@ This is a professional portfolio website built using HTML, CSS, and vanilla Java
 
 ### GitHub Pages Deployment
 
-1. Create a GitHub repository named `srajasimman.github.io` (replace "srajasimman" with your GitHub srajasimman).
+1. Create a GitHub repository named `srajasimman.github.io` (replace "srajasimman" with your GitHub username).
 
 2. Push your code to the repository:
    ```

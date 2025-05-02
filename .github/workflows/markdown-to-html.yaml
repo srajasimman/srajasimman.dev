@@ -6,6 +6,9 @@ on:
       - '**/*.md'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   convert-markdown:
     runs-on: ubuntu-latest

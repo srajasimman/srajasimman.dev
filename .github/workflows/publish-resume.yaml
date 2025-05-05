@@ -1,0 +1,56 @@
+name: Publish Resume
+concurrency:
+  group: publish-resume
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - data/resume.json
+      - data/about-me.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Export resume as HTML
+        uses: kelvintaywl/action-jsonresume-export@v1
+        with:
+          theme: elegant
+          resume_filepath: data/resume.json
+          output_filepath: resume.html
+
+      - name: Converts Markdown to HTML
+        uses: jaywcjlove/markdown-to-html-cli@v5.0.3
+        with:
+          source: data/about-me.md
+          output: about-me.html
+
+      - name: Commit resume
+        id: commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [ -n "$(git status --porcelain resume.html)" ]; then
+            git add resume.html
+            git commit -m "Update resume"
+            echo ::set-output name=exit_code::0
+          else
+            echo "No changes to commit"
+            echo ::set-output name=exit_code::1
+          fi
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        if: steps.commit.outputs.exit_code == 0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

@@ -34,5 +34,11 @@
     "description": "A validator to ensure commits follow the conventional commit format for better versioning and changelog generation.",
     "url": "https://github.com/srajasimman/conventional-commit-validator",
     "tags": ["git", "conventional-commits", "validation", "ci", "quality"]
+  },
+  {
+    "name": "jira-autolink-pr",
+    "description": "A GitHub Action that automatically updates Pull Request titles and descriptions with Jira issue information, extracted from branch names.",
+    "url": "https://github.com/srajasimman/jira-autolink-pr",
+    "tags": ["github","jira","github-actions","issueops"]
   }
 ]

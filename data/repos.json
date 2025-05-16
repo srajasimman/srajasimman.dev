@@ -9,13 +9,19 @@
     "name": "openresty-prometheus",
     "description": "OpenResty with integrated Prometheus metrics for advanced monitoring and observability.",
     "url": "https://github.com/srajasimman/openresty-prometheus",
-    "tags": ["openresty","prometheus","monitoring","metrics","observability"]
+    "tags": ["openresty", "prometheus", "monitoring", "metrics", "observability"]
   },
   {
     "name": "terraform-aws-github-oidc-iam",
     "description": "Terraform module for setting up GitHub OIDC with AWS IAM for secure, token-less authentication.",
     "url": "https://github.com/srajasimman/terraform-aws-github-oidc-iam",
     "tags": ["terraform", "aws", "github", "oidc", "iam", "security"]
+  },
+  {
+    "name": "terraform-aws-s3-cloudfront-static-site",
+    "description": "Terraform module for deploying a static website on AWS S3 with CloudFront CDN, including SSL support.",
+    "url": "https://github.com/srajasimman/terraform-aws-s3-cloudfront-static-site",
+    "tags": ["aws", "terraform", "s3", "cloudfront", "terraform-module"]
   },
   {
     "name": "mern-assessment-app",
@@ -27,18 +33,18 @@
     "name": "time-to-review",
     "description": "A tool to analyze and improve PR review times and development workflow efficiency.",
     "url": "https://github.com/srajasimman/time-to-review",
-    "tags": ["github", "analytics", "workflow", "pr-review", "development"]
+    "tags": ["github-actions", "github", "analytics", "workflow", "pr-review", "development"]
   },
   {
     "name": "conventional-commit-validator",
     "description": "A validator to ensure commits follow the conventional commit format for better versioning and changelog generation.",
     "url": "https://github.com/srajasimman/conventional-commit-validator",
-    "tags": ["git", "conventional-commits", "validation", "ci", "quality"]
+    "tags": ["github-actions", "git", "conventional-commits", "validation", "ci", "quality"]
   },
   {
     "name": "jira-autolink-pr",
     "description": "A GitHub Action that automatically updates Pull Request titles and descriptions with Jira issue information, extracted from branch names.",
     "url": "https://github.com/srajasimman/jira-autolink-pr",
-    "tags": ["github","jira","github-actions","issueops"]
+    "tags": ["github-actions", "github", "jira", "github-actions", "issueops"]
   }
 ]

@@ -28,13 +28,13 @@
     },
     "work": [
       {
-        "name": "FloSports Inc.",
-        "location": "Austin, Texas",
+        "name": "Akkodis India Pvt. Ltd.",
+        "location": "Bangalore, India",
         "position": "Lead SRE and Cloud DevOps",
-        "url": "https://www.flosports.tv",
+        "url": "https://www.akkodis.com/",
         "startDate": "2024-10-01",
-        "endDate": "Present",
-        "summary": "Sports Media and Broadcasting Company",
+        "endDate": "2025-06",
+        "summary": "Information Technology & Services",
         "highlights": [
           "Cloud Infrastructure: Design, deploy, and manage AWS, GCP, and Azure environments using Terraform and IaC.",
           "SRE & Reliability: Implement SRE best practices to improve system uptime, scalability, and resilience.",

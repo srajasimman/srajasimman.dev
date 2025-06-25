@@ -258,6 +258,20 @@
         ]
       },
       {
+        "name": "AI Tools",
+        "level": "Intermediate",
+        "keywords": [
+          "Copilot",
+          "OpenAI",
+          "Claude",
+          "Gemini",
+          "Llama 3",
+          "Ollama",
+          "AWS Bedrock",
+          "Azure AI Foundry"
+        ]
+      },
+      {
         "name": "Scripting",
         "level": "Expert",
         "keywords": ["Shell Scripting", "Python", "JavaScript", "Golang"]

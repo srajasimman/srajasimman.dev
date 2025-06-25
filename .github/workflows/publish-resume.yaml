@@ -27,6 +27,7 @@ jobs:
         id: check_changes_resume
         run: |
           git diff --exit-code HEAD^ HEAD -- data/resume.json
+        continue-on-error: true
 
       - name: Export resume as HTML
         if: steps.check_changes_resume.outputs.exit_code != 0
@@ -40,6 +41,7 @@ jobs:
         id: check_changes_about_me
         run: |
           git diff --exit-code HEAD^ HEAD -- data/about-me.md
+        continue-on-error: true
 
       - name: Converts Markdown to HTML
         if: steps.check_changes_about_me.outputs.exit_code != 0

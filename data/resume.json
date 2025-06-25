@@ -265,10 +265,12 @@
           "OpenAI",
           "Claude",
           "Gemini",
+          "DeepSeek",
           "Llama 3",
           "Ollama",
           "AWS Bedrock",
-          "Azure AI Foundry"
+          "Azure AI Foundry",
+          "n8n"
         ]
       },
       {

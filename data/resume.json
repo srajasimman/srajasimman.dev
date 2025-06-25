@@ -269,8 +269,7 @@
           "Llama 3",
           "Ollama",
           "AWS Bedrock",
-          "Azure AI Foundry",
-          "n8n"
+          "Azure AI Foundry"
         ]
       },
       {

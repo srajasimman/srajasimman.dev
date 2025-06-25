@@ -26,7 +26,7 @@ jobs:
       - name: Check for changes in resume.json
         id: check_changes_resume
         run: |
-          git diff --exit-code HEAD^ HEAD -- data/resume.json || echo "Changes detected"
+          git diff --exit-code HEAD^ HEAD -- data/resume.json
 
       - name: Export resume as HTML
         if: steps.check_changes_resume.outputs.exit_code != 0
@@ -39,7 +39,7 @@ jobs:
       - name: Check for changes in about-me.md
         id: check_changes_about_me
         run: |
-          git diff --exit-code HEAD^ HEAD -- data/about-me.md || echo "Changes detected"
+          git diff --exit-code HEAD^ HEAD -- data/about-me.md
 
       - name: Converts Markdown to HTML
         if: steps.check_changes_about_me.outputs.exit_code != 0

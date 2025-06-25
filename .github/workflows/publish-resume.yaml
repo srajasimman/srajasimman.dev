@@ -7,8 +7,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - data/**
   workflow_dispatch:
 
 permissions:
@@ -22,43 +20,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # if data/resume.json file is not changed, skip the rest of the steps
-      - name: Check for changes in resume.json
-        id: check_changes_resume
-        run: |
-          git diff --exit-code HEAD^ HEAD -- data/resume.json
-        continue-on-error: true
-
       - name: Export resume as HTML
-        if: steps.check_changes_resume.outputs.exit_code != 0
         uses: kelvintaywl/action-jsonresume-export@v1
         with:
           theme: elegant
           resume_filepath: data/resume.json
           output_filepath: resume.html
 
-      - name: Check for changes in about-me.md
-        id: check_changes_about_me
-        run: |
-          git diff --exit-code HEAD^ HEAD -- data/about-me.md
-        continue-on-error: true
-
       - name: Converts Markdown to HTML
-        if: steps.check_changes_about_me.outputs.exit_code != 0
         uses: jaywcjlove/markdown-to-html-cli@v5.0.3
         with:
           source: data/about-me.md
           output: about-me.html
 
       - name: Commit resume
-        if: steps.check_changes_resume.outputs.exit_code != 0 || steps.check_changes_about_me.outputs.exit_code != 0
         id: commit
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           if [ -n "$(git status --porcelain resume.html about-me.html)" ]; then
             git add resume.html about-me.html
-            git commit -m "Update resume"
+            git commit -m "Update resume [skip ci]"
             echo ::set-output name=exit_code::0
           else
             echo "No changes to commit"
@@ -67,7 +49,6 @@ jobs:
 
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: steps.commit.outputs.exit_code == 0 && steps.check_changes_resume.outputs.exit_code != 0 || steps.check_changes_about_me.outputs.exit_code != 0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}

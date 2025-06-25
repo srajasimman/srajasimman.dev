@@ -39,17 +39,17 @@ I believe in building **resilient, self-healing systems** backed by **automation
 
 **🛠️ My Tech Arsenal**
 
-| **Domain**     | **Tools & Platforms**                                                                 |
-|----------------|---------------------------------------------------------------------------------------|
-| **Cloud**      | GCP, AWS, Azure                                                                       |
-| **IaC**        | Terraform, Helm, Kustomize                                                            |
-| **Containers** | Docker, Kubernetes, OpenShift                                                         |
-| **CI/CD**      | GitHub Actions, ArgoCD, GitLab CI, Jenkins                                            |
-| **Monitoring** | Prometheus, Grafana, Loki, Blackbox, Uptime Kuma                                      |
-| **Security**   | HashiCorp Vault, Trivy, OPA, Aqua                                                     |
-| **Automation** | Ansible, Bash, Python, Go                                                             |
-| **AI Tools**   | OpenAI, Claude, Gemini, Llama 3, Ollama, AWS Bedrock, Azure AI Foundry                |
-| **Others**     | NGINX, Postgres, Cassandra, Redis, MinIO, Traefik, GitOps                             |
+| **Domain**     | **Tools & Platforms**                                                                    |
+|----------------|------------------------------------------------------------------------------------------|
+| **Cloud**      | GCP, AWS, Azure                                                                          |
+| **IaC**        | Terraform, Helm, Kustomize                                                               |
+| **Containers** | Docker, Kubernetes, OpenShift                                                            |
+| **CI/CD**      | GitHub Actions, ArgoCD, GitLab CI, Jenkins                                               |
+| **Monitoring** | Prometheus, Grafana, Loki, Blackbox, Uptime Kuma                                         |
+| **Security**   | HashiCorp Vault, Trivy, OPA, Aqua                                                        |
+| **Automation** | Ansible, Bash, Python, Go                                                                |
+| **AI Tools**   | OpenAI, Claude, Gemini, Llama 3, Ollama, AWS Bedrock, Azure AI Foundry, Google AI Studio |
+| **Others**     | NGINX, Postgres, Cassandra, Redis, MinIO, Traefik, GitOps                                |
 
 ---
 

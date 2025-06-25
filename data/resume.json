@@ -269,7 +269,8 @@
           "Llama 3",
           "Ollama",
           "AWS Bedrock",
-          "Azure AI Foundry"
+          "Azure AI Foundry",
+          "Google AI Studio"
         ]
       },
       {

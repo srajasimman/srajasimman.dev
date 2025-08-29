@@ -210,12 +210,12 @@
     "skills": [
       {
         "name": "Cloud Computing",
-        "level": "Expert",
+        "level": "Master",
         "keywords": ["AWS Cloud", "Azure Cloud", "Google Cloud", "Oracle Cloud"]
       },
       {
         "name": "SysOps and SRE",
-        "level": "Expert",
+        "level": "Master",
         "keywords": [
           "Linux",
           "Debian",
@@ -235,7 +235,7 @@
       },
       {
         "name": "DevOps",
-        "level": "Expert",
+        "level": "Master",
         "keywords": [
           "Docker",
           "Kubernetes",
@@ -275,7 +275,7 @@
       },
       {
         "name": "Scripting",
-        "level": "Expert",
+        "level": "Master",
         "keywords": ["Shell Scripting", "Python", "JavaScript", "Golang"]
       }
     ],

@@ -112,7 +112,7 @@ srajasimman.dev_v2/
 - Two-column on desktop, single column on mobile
 - Left: large pull-quote — *"Design systems that don't need babysitting."* in cyan
 - Right: 2–3 sentence summary from `resume.json` basics.summary, condensed
-- Three stat pills below: `14+ Years Experience` · `Multi-Cloud` · `Mission-Critical Infra`
+- Three stat pills below: `17+ Years Experience` · `Multi-Cloud` · `Mission-Critical Infra`
 
 ### 4. Skills
 - Section heading: `Skills` with cyan underline accent

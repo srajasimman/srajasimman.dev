@@ -183,7 +183,7 @@ Replace `index.html` with:
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rajasimman S — Cloud & DevOps Architect with 14+ years building scalable, observable, and cost-efficient cloud-native platforms across AWS, GCP, and Azure." />
+    <meta name="description" content="Rajasimman S — Cloud & DevOps Architect with 17+ years building scalable, observable, and cost-efficient cloud-native platforms across AWS, GCP, and Azure." />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Rajasimman S — Cloud & DevOps Architect" />
     <meta property="og:description" content="Cloud & DevOps Architect specializing in SRE, GitOps, IaC, and Cloud-Native platforms." />
@@ -628,7 +628,7 @@ Create `src/components/About.jsx`:
 import { useIntersection } from '../hooks/useIntersection.js'
 
 const STATS = [
-  { label: '14+ Years', sub: 'Experience' },
+  { label: '17+ Years', sub: 'Experience' },
   { label: 'Multi-Cloud', sub: 'AWS · GCP · Azure' },
   { label: 'Mission-Critical', sub: 'Infrastructure' },
 ]

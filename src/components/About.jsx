@@ -4,7 +4,7 @@
 import { useIntersection } from '../hooks/useIntersection.js'
 
 const STATS = [
-  { label: '14+ Years', sub: 'Experience' },
+  { label: '17+ Years', sub: 'Experience' },
   { label: 'Multi-Cloud', sub: 'AWS · GCP · Azure' },
   { label: 'Mission-Critical', sub: 'Infrastructure' },
 ]

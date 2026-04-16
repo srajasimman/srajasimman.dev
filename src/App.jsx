@@ -3,6 +3,7 @@ import repos from './data/repos.json'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
+import Skills from './components/Skills.jsx'
 
 export default function App() {
   const { basics } = resume
@@ -12,6 +13,7 @@ export default function App() {
       <main>
         <Hero basics={basics} />
         <About summary={basics.summary} />
+        <Skills skills={resume.skills} />
       </main>
     </div>
   )

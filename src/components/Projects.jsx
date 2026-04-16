@@ -32,7 +32,7 @@ export default function Projects({ projects }) {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((project, i) => (
             <article
-              key={i}
+              key={project.name}
               className="bg-surface2 border border-border rounded p-6 flex flex-col hover:-translate-y-0.5 hover:border-accent transition-all duration-200"
             >
               <div className="flex items-start justify-between gap-2 mb-3">

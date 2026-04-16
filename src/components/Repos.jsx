@@ -26,7 +26,7 @@ export default function Repos({ repos }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {repos.map((repo, i) => (
             <a
-              key={i}
+              key={repo.name}
               href={repo.url}
               target="_blank"
               rel="noopener noreferrer"

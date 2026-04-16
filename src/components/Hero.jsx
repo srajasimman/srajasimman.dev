@@ -7,6 +7,7 @@
 export default function Hero({ basics }) {
   return (
     <section
+      id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center"
       aria-label="Introduction"
     >
@@ -33,9 +34,7 @@ export default function Hero({ basics }) {
         </h1>
 
         {/* Role */}
-        <p className="text-xl text-secondary mb-8">
-          Cloud &amp; DevOps Architect
-        </p>
+        <p className="text-xl text-secondary mb-8">{basics.label}</p>
 
         {/* Terminal accent */}
         <div className="inline-block text-left border-l-2 border-accent bg-black/60 px-4 py-3 rounded-r mb-10">

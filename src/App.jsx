@@ -26,7 +26,7 @@ export default function App() {
         <References references={references} />
         <Contact basics={basics} />
       </main>
-      <Footer />
+      <Footer name={basics.name} />
     </div>
   )
 }

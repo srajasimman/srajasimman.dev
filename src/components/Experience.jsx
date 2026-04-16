@@ -37,7 +37,7 @@ export default function Experience({ work }) {
 
         <div className="space-y-12">
           {work.map((job, i) => (
-            <div key={i} className="grid md:grid-cols-[180px_1fr] gap-4 md:gap-8">
+            <div key={job.name + job.startDate} className="grid md:grid-cols-[180px_1fr] gap-4 md:gap-8">
               {/* Date + line */}
               <div className="flex md:flex-col md:items-end items-center gap-3">
                 <span className="font-mono text-muted text-xs whitespace-nowrap">

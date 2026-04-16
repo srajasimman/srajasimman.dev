@@ -54,7 +54,7 @@ export default function Experience({ work }) {
                 <p className="text-accent text-sm mt-0.5 mb-1">{job.name}</p>
                 <p className="text-muted text-xs mb-4">{job.location}</p>
                 <ul className="space-y-1.5">
-                  {job.highlights.slice(0, 4).map((h, j) => (
+                  {job.highlights.slice(0, 20).map((h, j) => (
                     <li key={j} className="text-secondary text-sm flex gap-2">
                       <span className="text-accent mt-0.5 shrink-0">▸</span>
                       <span>{h}</span>

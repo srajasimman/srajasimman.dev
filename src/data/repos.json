@@ -1,5 +1,11 @@
 [
   {
+    "name": "LexGrid",
+    "description": "A production-grade Retrieval-Augmented Generation (RAG) system for Indian Bare Acts.",
+    "url": "https://github.com/srajasimman/LexGrid",
+    "tags": ["python", "legal-ai", "nextjs", "openai", "rag", "fastapi"]
+  },
+  {
     "name": "self-host",
     "description": "A collection of Docker Compose configurations for self-hosting various services and applications.",
     "url": "https://github.com/srajasimman/self-host",

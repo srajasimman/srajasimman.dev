@@ -7,6 +7,7 @@ import Skills from './components/Skills.jsx'
 import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
 import Repos from './components/Repos.jsx'
+import References from './components/References.jsx'
 
 export default function App() {
   const { basics } = resume
@@ -20,6 +21,7 @@ export default function App() {
         <Experience work={resume.work} />
         <Projects projects={resume.projects} />
         <Repos repos={repos} />
+        <References references={resume.references} />
       </main>
     </div>
   )

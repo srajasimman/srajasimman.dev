@@ -6,6 +6,7 @@ import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
+import Repos from './components/Repos.jsx'
 
 export default function App() {
   const { basics } = resume
@@ -18,6 +19,7 @@ export default function App() {
         <Skills skills={resume.skills} />
         <Experience work={resume.work} />
         <Projects projects={resume.projects} />
+        <Repos repos={repos} />
       </main>
     </div>
   )

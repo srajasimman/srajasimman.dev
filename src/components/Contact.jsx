@@ -1,34 +1,65 @@
-// Contact section: centered email + LinkedIn + GitHub links.
+// Contact section: social links + Formspree contact form.
 // Props: basics (object with email, profiles)
 
+import { useState } from 'react'
 import { useIntersection } from '../hooks/useIntersection.js'
+
+const FORMSPREE_URL = 'https://formspree.io/f/mpwdqgjq'
 
 export default function Contact({ basics }) {
   const [ref, visible] = useIntersection()
   const linkedin = basics.profiles.find(p => p.network === 'LinkedIn')
   const github = basics.profiles.find(p => p.network === 'Github')
 
+  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
+  const [status, setStatus] = useState('idle') // idle | submitting | success | error
+
+  function handleChange(e) {
+    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    setStatus('submitting')
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (res.ok) {
+        setStatus('success')
+        setForm({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
     <section
       id="contact"
       aria-label="Contact"
-      className="py-24 px-6 bg-surface2 text-center"
+      className="py-24 px-6 bg-surface2"
     >
       <div
         ref={ref}
-        className={`max-w-xl mx-auto transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+        className={`max-w-2xl mx-auto transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
       >
-        <p className="font-mono text-accent text-xs tracking-[0.25em] uppercase mb-3">
+        <p className="font-mono text-accent text-xs tracking-[0.25em] uppercase mb-3 text-center">
           contact
         </p>
-        <h2 className="text-3xl font-bold text-primary mb-4">
+        <h2 className="text-3xl font-bold text-primary mb-4 text-center">
           Let's Connect
         </h2>
-        <p className="text-secondary text-base mb-10">
+        <p className="text-secondary text-base mb-8 text-center">
           Open to opportunities, collaborations, and interesting problems.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+        {/* Social links */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
           <a
             href={`mailto:${basics.email}`}
             className="flex items-center gap-2 text-secondary hover:text-accent transition-colors text-sm"
@@ -69,6 +100,93 @@ export default function Contact({ basics }) {
             </a>
           )}
         </div>
+
+        {/* Contact form */}
+        {status === 'success' ? (
+          <div className="border border-accent rounded p-8 text-center">
+            <p className="text-accent font-mono text-sm mb-1">$ message sent</p>
+            <p className="text-secondary text-sm">Thanks! I'll get back to you soon.</p>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} noValidate className="space-y-4">
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="name" className="block font-mono text-xs text-muted uppercase tracking-widest mb-1.5">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  value={form.name}
+                  onChange={handleChange}
+                  className="w-full bg-surface border border-border rounded px-4 py-2.5 text-sm text-primary placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block font-mono text-xs text-muted uppercase tracking-widest mb-1.5">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  value={form.email}
+                  onChange={handleChange}
+                  className="w-full bg-surface border border-border rounded px-4 py-2.5 text-sm text-primary placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                  placeholder="your@email.com"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="subject" className="block font-mono text-xs text-muted uppercase tracking-widest mb-1.5">
+                Subject
+              </label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                required
+                value={form.subject}
+                onChange={handleChange}
+                className="w-full bg-surface border border-border rounded px-4 py-2.5 text-sm text-primary placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                placeholder="What's this about?"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="message" className="block font-mono text-xs text-muted uppercase tracking-widest mb-1.5">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={5}
+                required
+                value={form.message}
+                onChange={handleChange}
+                className="w-full bg-surface border border-border rounded px-4 py-2.5 text-sm text-primary placeholder:text-muted focus:outline-none focus:border-accent transition-colors resize-none"
+                placeholder="Tell me about your project or opportunity..."
+              />
+            </div>
+
+            {status === 'error' && (
+              <p className="text-red-400 text-xs font-mono">Something went wrong. Please try again or email directly.</p>
+            )}
+
+            <button
+              type="submit"
+              disabled={status === 'submitting'}
+              className="w-full bg-accent text-surface font-bold px-6 py-3 rounded text-sm hover:bg-accent-dim transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {status === 'submitting' ? 'Sending…' : 'Send Message'}
+            </button>
+          </form>
+        )}
       </div>
     </section>
   )

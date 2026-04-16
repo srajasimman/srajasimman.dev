@@ -8,21 +8,25 @@ import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
 import Repos from './components/Repos.jsx'
 import References from './components/References.jsx'
+import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function App() {
-  const { basics } = resume
+  const { basics, work, skills, projects, references } = resume
   return (
     <div className="bg-surface text-primary font-sans">
       <Header name={basics.name} profiles={basics.profiles} />
       <main>
         <Hero basics={basics} />
         <About summary={basics.summary} />
-        <Skills skills={resume.skills} />
-        <Experience work={resume.work} />
-        <Projects projects={resume.projects} />
+        <Skills skills={skills} />
+        <Experience work={work} />
+        <Projects projects={projects} />
         <Repos repos={repos} />
-        <References references={resume.references} />
+        <References references={references} />
+        <Contact basics={basics} />
       </main>
+      <Footer />
     </div>
   )
 }

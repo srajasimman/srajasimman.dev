@@ -5,6 +5,7 @@ import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Experience from './components/Experience.jsx'
+import Projects from './components/Projects.jsx'
 
 export default function App() {
   const { basics } = resume
@@ -16,6 +17,7 @@ export default function App() {
         <About summary={basics.summary} />
         <Skills skills={resume.skills} />
         <Experience work={resume.work} />
+        <Projects projects={resume.projects} />
       </main>
     </div>
   )

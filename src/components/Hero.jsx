@@ -28,9 +28,9 @@ export default function Hero({ basics }) {
           Cloud · DevOps · SRE
         </p>
 
-        {/* Name */}
+        {/* Name — first 4 letters "Raja" highlighted in accent */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-primary mb-3">
-          {basics.name}
+          <span className="text-accent">{basics.name.slice(0, 4)}</span>{basics.name.slice(4)}
         </h1>
 
         {/* Role */}

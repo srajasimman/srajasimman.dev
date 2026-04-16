@@ -45,6 +45,6 @@
     "name": "jira-autolink-pr",
     "description": "A GitHub Action that automatically updates Pull Request titles and descriptions with Jira issue information, extracted from branch names.",
     "url": "https://github.com/srajasimman/jira-autolink-pr",
-    "tags": ["github-actions", "github", "jira", "github-actions", "issueops"]
+    "tags": ["github-actions", "github", "jira", "issueops"]
   }
 ]

@@ -250,33 +250,41 @@
           "Nginx",
           "Apache",
           "Tomcat",
+          "OpenResty",
           "MySQL",
           "Postgresql",
+          "MongoDB",
           "Cassandra",
           "Elasticsearch",
           "Redis"
         ]
       },
       {
-        "name": "AI Tools",
-        "level": "Intermediate",
+        "name": "AI Tools & Platforms",
+        "level": "Advanced",
         "keywords": [
-          "Copilot",
           "OpenAI",
+          "Anthropic",
           "Claude",
           "Gemini",
           "DeepSeek",
-          "Llama 3",
           "Ollama",
           "AWS Bedrock",
           "Azure AI Foundry",
-          "Google AI Studio"
+          "Microsoft Foundry",
+          "Google AI Studio",
+          "Copilot",
+          "RAG",
+          "MCP",
+          "ACP",
+          "LangChain",
+          "FastAPI"
         ]
       },
       {
-        "name": "Scripting",
+        "name": "Scripting & Web",
         "level": "Master",
-        "keywords": ["Shell Scripting", "Python", "JavaScript", "Golang"]
+        "keywords": ["Shell Scripting", "Python", "JavaScript", "Golang", "Next.js", "React", "FastAPI", "Node.js"]
       }
     ],
     "languages": [

@@ -6,10 +6,11 @@ import { useIntersection } from '../hooks/useIntersection.js'
 
 const CATEGORY_ICONS = {
   'Cloud Computing': '☁',
-  'SysOps and SRE': '📡',
+  'SysOps and SRE': '⏱',
   'DevOps': '⚙',
-  'AI Tools': '✦',
-  'Scripting': '{ }',
+  'Databases & Web Servers': '❖',
+  'AI Tools & Platforms': '✦',
+  'Scripting & Web': '⌨',
 }
 
 export default function Skills({ skills }) {

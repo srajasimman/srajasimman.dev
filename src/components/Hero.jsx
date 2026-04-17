@@ -4,7 +4,42 @@
 // Bottom: two CTAs.
 // Props: basics (object with name, label, email, profiles)
 
+import { useState, useEffect } from 'react'
+
+const TECH_ITEMS = [
+  'Cloud-Native',
+  'Kubernetes',
+  'Terraform',
+  'GitHub-Actions',
+  'DevSecOps',
+  'GitOps',
+  'Security',
+  'Observability'
+]
+
 export default function Hero({ basics }) {
+  const [itemIndex, setItemIndex] = useState(0)
+  const [charIndex, setCharIndex] = useState(0)
+  const [deleting, setDeleting] = useState(false)
+
+  useEffect(() => {
+    const current = TECH_ITEMS[itemIndex]
+    let timeout
+    if (!deleting && charIndex < current.length) {
+      timeout = setTimeout(() => setCharIndex(c => c + 1), 80)
+    } else if (!deleting && charIndex === current.length) {
+      timeout = setTimeout(() => setDeleting(true), 1500)
+    } else if (deleting && charIndex > 0) {
+      timeout = setTimeout(() => setCharIndex(c => c - 1), 40)
+    } else {
+      setDeleting(false)
+      setItemIndex(i => (i + 1) % TECH_ITEMS.length)
+    }
+    return () => clearTimeout(timeout)
+  }, [charIndex, deleting, itemIndex])
+
+  const displayedText = TECH_ITEMS[itemIndex].slice(0, charIndex)
+
   return (
     <section
       id="hero"
@@ -39,11 +74,10 @@ export default function Hero({ basics }) {
         {/* Terminal accent */}
         <div className="inline-block text-left border-l-2 border-accent bg-black/60 px-4 py-3 rounded-r mb-10">
           <span className="font-mono text-muted text-sm">$ </span>
-          <span className="font-mono text-accent text-sm">Specializing in</span>
-          <span className="font-mono text-primary text-sm">
-            {' '}SRE · GitOps · IaC · Cloud-Native
+          <span className="font-mono text-accent text-sm">Specializing in </span>
+          <span className="font-mono text-sm inline-block w-32">
+            <span className="text-primary">{' '}{displayedText}</span><span className="text-accent animate-blink">█</span>
           </span>
-          <span className="font-mono text-accent text-sm animate-blink ml-1">█</span>
         </div>
 
         {/* CTAs */}

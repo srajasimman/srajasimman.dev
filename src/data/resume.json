@@ -218,14 +218,16 @@
           "Debian",
           "Ubuntu",
           "RHEL",
-          "Shell Scripting",
           "Grafana",
           "Prometheus",
           "Nagios",
           "Datadog",
+          "K6",
           "Networking",
           "SSL",
           "CDN",
+          "Fastly",
+          "AWS CloudFront",
           "Jira",
           "Confluence"
         ]
@@ -240,20 +242,28 @@
           "Jenkins",
           "Github",
           "Gitlab",
-          "Github Action",
+          "GitHub Actions",
           "ArgoCD",
+          "Flux",
           "Ansible",
           "Terraform",
-          "Nginx",
-          "Apache",
-          "Tomcat",
-          "OpenResty",
+          "OpenTofu"
+        ]
+      },
+      {
+        "name": "Databases & Web Servers",
+        "level": "Master",
+        "keywords": [
           "MySQL",
-          "Postgresql",
+          "PostgreSQL",
           "MongoDB",
           "Cassandra",
           "Elasticsearch",
-          "Redis"
+          "Redis",
+          "Nginx",
+          "Apache",
+          "Tomcat",
+          "OpenResty"
         ]
       },
       {
@@ -262,26 +272,25 @@
         "keywords": [
           "OpenAI",
           "Anthropic",
-          "Claude",
           "Gemini",
           "DeepSeek",
           "Ollama",
           "AWS Bedrock",
           "Azure AI Foundry",
-          "Microsoft Foundry",
           "Google AI Studio",
           "Copilot",
+          "Claude",
+          "Codex",
           "RAG",
           "MCP",
           "ACP",
-          "LangChain",
-          "FastAPI"
+          "LangChain"
         ]
       },
       {
         "name": "Scripting & Web",
         "level": "Master",
-        "keywords": ["Shell Scripting", "Python", "JavaScript", "Golang", "Next.js", "React", "FastAPI", "Node.js"]
+        "keywords": ["Shell Scripting", "Python", "TypeScript", "JavaScript", "Golang", "Next.js", "React", "FastAPI", "Node.js"]
       }
     ],
     "languages": [

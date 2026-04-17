@@ -208,7 +208,12 @@
       {
         "name": "Cloud Computing",
         "level": "Master",
-        "keywords": ["AWS Cloud", "Azure Cloud", "Google Cloud", "Oracle Cloud"]
+        "keywords": [
+          "AWS", "EC2", "EKS", "Lambda", "S3", "RDS", "CloudFront", "IAM", "CloudWatch", "CloudFormation",
+          "Azure", "AKS", "Azure DevOps", "Azure Functions", "Web App", "Azure Monitor", "Azure Key Vault",
+          "GCP", "GKE", "Cloud Run", "Cloud Build", "Cloud Storage", "BigQuery", "Pub/Sub",
+          "OCI", "OCI Compute", "OCI Container Engine", "OCI Object Storage"
+        ]
       },
       {
         "name": "SysOps and SRE",
